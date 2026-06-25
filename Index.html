@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>VPS Khiddi Fee Reminder - Test</title>
+
+    <script
+      src="https://cdn.jsdelivr.net/gh/VapiAI/html-script-tag@latest/dist/assets/index.js"
+      defer
+      async
+    ></script>
+  </head>
+
+  <body>
+    <h3>Veena Public School Khiddi – Fee Reminder Agent</h3>
+    <p>Click the widget to start a test call.</p>
+
+    <script>
+      window.addEventListener("load", () => {
+        window.vapiSDK.run({
+          apiKey: "73df77d6-81fa-4708-9731-4d18ffaffbe6",
+          assistant: "98b23aec-b30c-4e4a-9d49-de4da15f1a03",
+          config: {
+            position: "bottom-right",
+            // Optional: start with variables for testing
+            assistantOverrides: {
+              variableValues: {
+                school_phone: "+91XXXXXXXXXX",
+                school_whatsapp: "+91XXXXXXXXXX",
+                payment_link: "https://example.com/pay",
+                father_name: "Rajesh",
+                mother_name: "Sunita",
+                student_name: "Aarav",
+                class: "5",
+                section: "A",
+                pending_fee: "2500",
+                pending_month: "June",
+                last_payment: "15-May-2026",
+                due_date: "30-Jun-2026"
+              }
+            }
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
